@@ -9,6 +9,10 @@ public class App {
         books.add(new Book("Hop Skip Jump", 42, 2022));
         books.add(new Book("Briefcases: a brief case", 20, 2022));
         books.add(new Book("Verily", 621, 1995));
+        books.add(new Book());
+        books.add(new Book("How Could You?"));
+        books.add(new Book(1997, 478));
+        books.add(new Book("Rocks are Neat", 732));
 
         System.out.println("There are already some books in the list; add more?");
 
