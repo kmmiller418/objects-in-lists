@@ -7,12 +7,36 @@ public class Animal {
         this.isDog = isDog;
     }
 
+    public Animal ()
+    {
+        this.name = null;
+        this.isDog = false;
+    }
+
+    public Animal (String name) {
+        this.name = name;
+        this.isDog = false;
+    }
+
+    public Animal (boolean isDog) {
+        this.name = null;
+        this.isDog = isDog;
+    }
+
     public String getName() {
         return this.name;
     }
 
     public boolean getIsDog() {
         return this.isDog;
+    }
+
+    public void setIsDog(boolean isDog) {
+        this.isDog = isDog;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

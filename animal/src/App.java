@@ -5,6 +5,10 @@ public class App {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         ArrayList<Animal> animals = new ArrayList<>();
+        animals.add(new Animal());
+        animals.add(new Animal("Champ"));
+        animals.add(new Animal(false));
+        animals.add(new Animal("Buddy", true));
 
         System.out.println("Animal Menu");
 
