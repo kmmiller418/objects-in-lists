@@ -9,7 +9,7 @@ public class Animal {
 
     public Animal ()
     {
-        this.name = null;
+        this.name = "Friend";
         this.isDog = false;
     }
 
@@ -19,7 +19,7 @@ public class Animal {
     }
 
     public Animal (boolean isDog) {
-        this.name = null;
+        this.name = "Friend";
         this.isDog = isDog;
     }
 
