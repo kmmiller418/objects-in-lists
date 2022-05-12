@@ -7,19 +7,13 @@ public class Animal {
         this.isDog = isDog;
     }
 
-    public Animal ()
-    {
-        this.name = "Friend";
-        this.isDog = false;
-    }
+    public Animal () {}
 
     public Animal (String name) {
         this.name = name;
-        this.isDog = false;
     }
 
     public Animal (boolean isDog) {
-        this.name = "Friend";
         this.isDog = isDog;
     }
 
