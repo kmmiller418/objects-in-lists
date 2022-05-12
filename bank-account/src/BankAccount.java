@@ -14,16 +14,10 @@ public class BankAccount {
     }
 
     public BankAccount() {
-        System.out.println("Thank you for your interest in banking with THE BANK.");
-        System.out.println("What is the name for the account?");
-        customerName = s.nextLine();
-        System.out.println("What is the beginning balance on the account?");
-        balance = Integer.parseInt(s.nextLine());
-        accountNumber = generateAccountNum();
-
+        int accountNumber = generateAccountNum();
     }
 
-    public int generateAccountNum() {
+    public static int generateAccountNum() {
         return rand.nextInt(1000000);
     }
     public void deposit (double amount) {
@@ -49,6 +43,14 @@ public class BankAccount {
 
     public int getAccountNumber() {
         return accountNumber;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     @Override

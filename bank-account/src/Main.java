@@ -30,7 +30,18 @@ public class Main {
             Main.mainMenu(account);
 
         } else if (reply.equals("2")) {
+
             BankAccount newAccount = new BankAccount();
+            System.out.println("Thank you for your interest in banking with THE BANK.");
+
+            System.out.println("What is the name for the account?");
+            String customerName = s.nextLine();
+            System.out.println("What is the beginning balance on the account?");
+            int balance = Integer.parseInt(s.nextLine());
+
+            newAccount.setCustomerName(customerName);
+            newAccount.setBalance(balance);
+
             accounts.add(newAccount);
             Main.mainMenu(newAccount);
         }
